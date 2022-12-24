@@ -1,0 +1,141 @@
+body{
+   padding-top: 48px;
+   padding-left: 65px;
+   background-color: rgb(241, 241, 241);
+   position: absolute;
+}
+p{
+   margin: 0px;
+   font-family:'Roboto',Arial,sans-serif;
+   
+}
+a{
+   text-decoration:none ;
+   color: black;
+}
+.div1{
+   padding: 4px;
+}
+
+.imgdiv{
+   
+   position: relative;
+  
+}
+.time-stamp{
+   position: absolute;
+   bottom: 8px;
+   right: 5px;
+   background-color: black;
+   color: white;
+   font-size:12px ;
+   font-family: Arial;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   border-radius: 2px;
+}
+.thumbnail
+  {
+    width:100%;
+    border-radius: 10px;
+  }
+.video_infogrid{
+  
+   display: grid;
+   grid-template-columns: 48px 1fr;
+   
+}
+
+.profile{
+   width: 36px;
+   border-radius:36px;
+   margin-top: 12px;
+}
+
+.profile_div
+{
+ position: relative;
+ cursor: pointer;
+}
+
+.channel-tooltip{
+   position: absolute;
+   z-index: 200;
+   display: flex;
+   background-color: #fdfbfb;
+   font-family: Roboto;
+   font-size: 12px;
+   white-space: nowrap;
+   width: 220px;
+   height: 80px;
+   align-items: center;
+   padding-left: 10px;
+   border-radius: 7px;
+   bottom: -10px;
+   box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+   opacity: 0;
+   pointer-events:none;
+}
+.channel-tooltip-image{
+   height: 55px;
+   border-radius: 27px;
+   margin-right: 7px;
+   box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+.channel-tooltip-txt1{
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 20px;
+}
+.channel-tooltip-txt2{
+   font-size: 13px;
+   color: #606060;
+}
+.profile_div:hover .channel-tooltip{
+   opacity: 1;
+}
+.title{
+   margin-top: 12px;
+  font-weight:500;
+   font-size: 14px;
+   line-height: 20px;
+  
+  
+}
+.chname{
+  
+   font-size: 12px;
+   margin-top: 8px;
+   color: #606060;
+   font-weight: 400;
+   line-height: 1.5
+}
+.video_stats{
+  
+   font-size: 12px;
+   margin-bottom:16px;
+   color: #606060;
+   font-weight:400;
+}
+.video-grid{
+   display: grid;
+         grid-template-columns:1fr 1fr 1fr 1fr;
+        column-gap: 8px;
+         row-gap: 16px;
+          padding: 20px;
+}
+
+@media (max-width:750px)
+{
+   .video-grid {
+      grid-template-columns: 1fr  1fr ;
+   }
+}
+@media(min-width:751px ) and (max-width:1185px)
+{
+   .video-grid {
+      grid-template-columns: 1fr 1fr 1fr ;
+   }
+}
